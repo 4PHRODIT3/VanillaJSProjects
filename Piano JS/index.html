@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Piano</title>
+    <style>
+        :root{
+            --white:white;
+            --primary-black:black;
+            --soft-dark:#565656;
+            --background: #3a3b3c;
+;
+        }
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        *:focus{
+            outline: none;
+        }
+        body{
+            background-color: var(--background);
+        }
+        .container{
+            width:60%;
+            margin: auto;
+            padding: 20px 0px;
+        }
+        .key-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .key-btn{
+            width: 120px;
+            height: 350px;
+            font-size: 20px;
+        }
+        .key-btn:nth-child(even){
+            background-color: var(--primary-black);
+            color: var(--white);
+        }
+        #show-keys{
+            width: 90%;
+            height: 50px;
+            padding: 5px 10px;
+            background-color: var(--soft-dark);
+            border: 0px solid;
+            color: var(--white);
+            font-size: 18px;
+        }
+        .show-key-container{
+            background: var(--soft-dark);
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .show-btn{
+            width: 60px;
+            font-size: 24px;
+        }
+        #record-list{
+            padding: 0px;
+            width: 100%;
+            margin: 20px 0px ;
+            list-style-type: none;
+        }
+        #record-list li{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            overflow: hidden;
+            color: var(--white);
+            padding: 10px 5px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            
+        }
+        #record-list li:hover{
+            background-color: gray;
+            margin-left: 5px;
+        }
+        .replay{
+            padding: 5px 10px;
+            background-color: var(--background);
+            font-size: 24px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="show-key-container">
+            <input type="text" id="show-keys">
+            <button class="show-btn" onclick="saveChord()"><i class="far fa-save"></i></button>
+        </div>
+        <div class="key-container">
+        </div>
+        <ul id="record-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
