@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Register Your Account</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="form-heading">Register With Us</h2>
+        <form class="form-container" id="form">
+            <div class="form-controls">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <small id="usernameWarning"></small>
+            </div>
+            <div class="form-controls">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Email">
+                <small id="emailWarning"></small>
+            </div>
+            <div class="form-controls">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+                <small id="passwordWarning"></small>
+            </div>
+            <div class="form-controls">
+                <label for="password1">Confirm Password</label>
+                <input type="password" id="password1" placeholder="Enter Password Again">
+                <small id="password1Warning"></small>
+            </div>
+            <div class="form-controls btn-container">
+                <input type="submit" class="btn" >
+            </div>
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
