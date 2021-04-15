@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>JavaScript Gallery</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: skyblue;
+        }
+        .gallery-container{
+            width: 80%;
+            margin: 50px auto;
+            columns: 3 300px;
+            column-gap: 25px;
+        }
+        .gallery-img{
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow:0 0 10px slategrey;
+        }
+        .upload-container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0px;
+            background-color: gainsboro;
+            margin-top: 20px;
+            border-radius: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container" id="upload-container">
+        <i class="fas fa-upload fa-3x"></i>
+    </div>
+    <input style="display: none;" type="file" id="upload" accept="image/*" multiple>
+    <div class="gallery-container" id="container">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
