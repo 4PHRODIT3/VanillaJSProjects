@@ -24,7 +24,7 @@ body {
 
 .container {
   width: 35%;
-  margin: 100px auto;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +56,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0px;
+  margin: 25px 0px;
   background: var(--show-case-background);
   color: var(--soft-dark);
 }
@@ -75,17 +75,17 @@ body {
   width: 100%;
   height: 75px;
   background: var(--light);
-  transform: rotateX(-45deg);
-  box-shadow: 0 3px 10px rgb(255 255 255 / 70%);
+  transform: rotateX(-55deg);
+  box-shadow: 0 5px 10px rgb(255 255 255 / 70%);
   margin-bottom: 40px;
 }
 .seat {
   color: var(--avail-seat);
 }
-.selected i {
+.selected {
   color: var(--selected-seat);
 }
-.occupied i {
+.occupied {
   color: var(--light);
 }
 
@@ -98,7 +98,7 @@ body {
   width: 22px;
   height: 30px;
 }
-.row .seat:not(.occupied) .fa-couch:hover {
+.row .seat:not(.occupied):hover {
   font-size: 18px;
 }
 .row .seat:nth-of-type(2) {
@@ -115,4 +115,22 @@ body {
 }
 #amount {
   color: var(--selected-seat);
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    width: 96%;
+  }
+}
+@media screen and (max-width: 280px) {
+  .container {
+    width: 99%;
+  }
+  .movie-select-container {
+    width: 100%;
+  }
+  .movie-select-container select {
+    width: 180px;
+    padding: 5px 10px;
+  }
 }
