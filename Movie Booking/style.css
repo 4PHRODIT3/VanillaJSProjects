@@ -5,6 +5,7 @@
   --selected-seat: #6feaf6;
   --light: #fff;
   --soft-dark: #777;
+  --dark: rgb(15, 15, 15);
 }
 
 * {
@@ -47,6 +48,8 @@ body {
   text-indent: 1px;
   text-overflow: "";
   width: 190px;
+  background: gainsboro;
+  color: var(--dark);
 }
 
 .symbols {
