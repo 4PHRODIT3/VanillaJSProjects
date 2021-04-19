@@ -1,0 +1,141 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+*:focus {
+  outline: none;
+}
+.invisible {
+  display: none !important;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-flow: column wrap;
+}
+.container .heading {
+  margin-bottom: 20px;
+}
+.video-container {
+  position: relative;
+  width: 50%;
+}
+.video-container video {
+  width: 100%;
+  height: 400px;
+}
+.controls {
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+  width: 93%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  background: none;
+}
+.btn i {
+  color: #fefefe;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+#timestamp {
+  width: 63%;
+  border-radius: 2px;
+  height: 4px;
+  margin: 0px 5px;
+}
+#timestamp:hover {
+  height: 6px;
+}
+#duration {
+  color: #fefefe;
+  margin: 10px;
+  font-size: 12px;
+}
+
+/* rgb(253, 84, 84)
+rgb(161, 161, 161) */
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="range"] {
+    overflow: hidden;
+    -webkit-appearance: none;
+    background-color: rgb(161, 161, 161);
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 3px;
+    -webkit-appearance: none;
+    margin-top: -1px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: rgb(253, 84, 84);
+    box-shadow: -210px 0 0 210px rgb(253, 84, 84);
+  }
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: rgb(253, 84, 84);
+}
+input[type="range"]::-moz-range-track {
+  background-color: rgb(161, 161, 161);
+}
+input[type="range"]::-moz-range-thumb {
+  background: rgb(253, 84, 84);
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: rgb(253, 84, 84);
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: rgb(161, 161, 161);
+}
+
+@media only screen and (max-width: 520px) {
+  .container {
+    width: 96%;
+    margin: auto;
+  }
+  .video-container {
+    width: 100%;
+  }
+  .video-container video {
+    width: 100%;
+    height: 220px;
+  }
+  .controls {
+    height: 50px;
+    width: 100%;
+    left: -0px;
+    justify-content: center;
+  }
+  .btn {
+    margin: 3px;
+    width: 30px;
+  }
+  #timestamp {
+    width: 45%;
+  }
+  #duration {
+    font-size: 12px;
+    margin: 0px;
+  }
+  .heading {
+    margin: 0px;
+  }
+}
