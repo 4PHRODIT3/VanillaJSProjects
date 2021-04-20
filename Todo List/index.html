@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        
+        body{
+            background-color: #A5C6E1;
+        }
+        .todo{
+            width: 60%;
+            margin: auto;
+            background-color: gainsboro;
+            padding: 5px 30px;
+            border-radius: 10px;
+            font-family: 'Raleway', sans-serif;
+
+        }
+        .input-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #text{
+            width: 89%;
+            
+            padding: 10px;
+            height: 37px;
+            border-radius: 20px;
+            font-size: x-large;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bolder;
+            border: none;
+        }
+        *:focus{
+            outline: none;
+        }
+        .btn{
+            padding: 10px;
+            border-radius: 15px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 15px;
+            font-weight: bolder;
+            border: none;
+        }
+        .btn-align-inside{
+            font-size: 20px;
+            
+        }
+        .list{
+            list-style-type: none;
+            font-weight: bolder;
+            border-radius: 20px;
+            display: block;
+            padding: 10px;
+            
+        }
+        .list-item{
+            font-size: large;
+            margin-left: -35px;
+            margin-bottom: 20px;
+            display: block;
+            border-radius: 20px;
+            padding: 15px 15px;
+            height: 40px;
+            font-weight: bolder;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .black-theme{
+            background-color: black !important;
+            color: white !important;
+        }
+        .white-theme{
+            background-color: white !important;
+            color: black !important;
+        }
+        #remaining{
+            margin-left: 9px;
+        }
+        .li-btn{
+            border: 0px solid;
+            float: right;
+            margin-right: 4px;
+            background-color: white;
+           
+        }
+        .button-container{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .btn-clear{
+            margin-left: 45%;
+        }
+        
+        @media only screen and (max-width: 780px) {
+            .todo{
+                width: 90%;
+                margin: auto;
+                padding: 12px;
+            }
+            #text{
+                font-size: large;
+                width: 95% ;
+            }
+            .btn-align-inside{
+                font-size: 28px !important;
+                font-weight: bolder;
+                margin-left: 15px;
+            }    
+            .btn{
+                font-size: 10px;
+            }
+            .li-btn{
+                margin-top: -3px;
+            }
+            .list-item{
+                font-size: small;
+            }
+        }
+        @media only screen and (max-width: 420px) {
+            #text{
+                width: 85% ;
+            }
+            .btn-align-inside{
+                font-size: 25px !important;
+                font-weight: bolder;
+                margin-left: 15px;
+            }  
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="todo">
+        <h1>To Do List</h1>
+        <hr><br>
+        <div class="input-container">
+            <input type="text" id="text"  placeholder="Add To Do Task.....">
+            <button  class="btn btn-align-inside" value="Add to List" onclick="addToList()">+</button>
+        </div>
+        <br>
+        <br>
+        
+        <ul id="list">
+
+        </ul>
+        <h3 id="remaining"></h3>
+        <button class="btn btn-clear" onclick="clearAll()">Clear All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Made with love by Htet Myat Linn -->
+<!-- Finished at March 3 -->
+
