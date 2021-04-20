@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #5fbaa7;
+  --dark: #111111;
+  --soft-light: #f4f4f4;
+}
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+*:focus {
+  outline: none;
+}
+body {
+  background-color: var(--soft-light);
+}
+.container {
+  width: 40%;
+  margin: 30px auto 0px auto;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.header .title {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.app-container {
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.app-container .instruction {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.currency-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  align-items: center;
+  width: 95%;
+}
+
+.currency-container select {
+  width: 72px;
+  height: 38px;
+  background-color: var(--soft-light);
+  border: 1px solid #dedede;
+  padding: 8px 5px;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  font-weight: normal;
+  font-size: 16px;
+  background-size: 14px;
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+}
+.currency-container select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+.currency-container input[type="number"] {
+  height: 38px;
+  width: 84%;
+  border: none;
+  padding: 5px 10px;
+  text-align: right;
+  font-size: 25px;
+  color: var(--dark);
+  background: var(--soft-light);
+}
+.currency-container #result {
+  color: var(--primary-color);
+  padding-right: 24px;
+}
+.btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 5px 5px;
+  width: 70px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+}
