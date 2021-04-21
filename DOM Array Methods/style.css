@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+*:focus {
+  outline: none;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+}
+.container .heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.app-body-container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: flex-end;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.btn {
+  width: 200px;
+  padding: 10px 0px;
+  background: white;
+  margin-bottom: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: gainsboro;
+}
+
+.content-container {
+  width: 60%;
+  border-left: 1px solid black;
+  padding: 10px 20px;
+}
+
+.content-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.content-heading h2:last-child {
+  font-weight: lighter !important;
+}
+
+.divider {
+  border: 1.5px solid black;
+  background: black;
+  margin-bottom: 5px;
+}
+
+.person {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+
+.person h2:last-child {
+  font-weight: lighter !important;
+}
+
+.person span {
+  font-size: 1.5rem;
+}
+
+.light {
+  background: white !important;
+}
+
+.invisible {
+  display: none;
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    width: 100%;
+  }
+  .btn {
+    width: 90px;
+    padding: 10px 5px;
+  }
+  .buttons-container {
+    width: 27%;
+    margin-right: 5px;
+  }
+  .content-container {
+    width: 73%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .content-heading h2 {
+    font-size: 1rem !important;
+  }
+  .person h2,
+  .person span {
+    font-size: 0.8rem;
+  }
+}
