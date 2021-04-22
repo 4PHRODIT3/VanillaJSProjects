@@ -145,6 +145,7 @@ body {
   background: rgb(17, 17, 17, 0.8);
   top: 0px;
   left: 0px;
+  display: none;
 }
 .modal-content {
   width: 350px;
@@ -192,11 +193,25 @@ body {
   border-radius: 5px;
   margin: 10px 0px;
 }
+.show-modal {
+  display: block;
+}
 @media screen and (max-width: 520px) {
   .body-container {
     width: 100%;
   }
   .header-body .sign-up-btn {
     top: 130px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .modal-content {
+    width: 100%;
+  }
+  .header {
+    height: 340px;
+  }
+  .header .sign-up-btn {
+    top: 200px;
   }
 }
