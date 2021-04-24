@@ -112,3 +112,5 @@ document.addEventListener("keyup", e => {
         openFullscreen();
     }
 })
+
+updateTimestamp();
