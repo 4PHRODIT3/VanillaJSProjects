@@ -76,7 +76,8 @@
 
 .show-search-word {
   margin: 25px auto;
-  width: 200px;
+  width: 100%;
+  text-align: center;
 }
 .show-search-word p {
   color: var(--light);
@@ -166,13 +167,15 @@
   margin: 15px auto;
 }
 .ingredient-container span {
-  padding: 8px 10px;
+  padding: 4px 10px;
   background: var(--dark-gainsboro);
   display: inline-block;
   margin: 3px 2px;
   border-radius: 5px;
   color: var(--dark);
   font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 520px) {
   .container {
@@ -201,8 +204,8 @@
     flex-direction: column;
   }
   .images-section .img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
   }
 
   .detail-container {
