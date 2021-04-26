@@ -125,6 +125,7 @@ input[type="range"]::-ms-fill-upper {
   .video-container video {
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
   .controls {
     height: 30px;
