@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 :root {
   --background: #e0e5ec;
+  --primary: rgba(255, 255, 255, 0.274);
   --dark: #262170fb;
+  --light: #fff;
   --shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
     -9px -9px 16px rgba(255, 255, 255, 0.5);
-  --success: #00c89e;
-  --lavender: #dccce9be;
+  --success: #97bfb7;
+  --danger: rgba(245, 102, 102, 0.89);
+  --scrollbar-thumb: #0087bd;
+  --btn: rgba(126, 186, 190, 0.877);
+  --message: skyblue;
 }
 
 * {
@@ -23,13 +28,19 @@ body {
   background: var(--background);
 }
 
+.neumorphic-card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
-  margin: 40px auto;
   width: 30%;
   box-shadow: var(--shadow);
-  min-height: 80vh;
   border-radius: 40px;
-  padding: 12px 25px;
+  padding: 7px 25px;
 }
 
 .header {
@@ -55,23 +66,219 @@ body {
 }
 
 .property-status {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0px;
-  background: var(--violet);
+  padding: 15px 13px;
+  background: var(--primary);
+  border-radius: 15px;
+  line-height: 27px;
+  position: relative;
+  color: var(--dark);
 }
+
 .income {
   width: 45%;
+  text-align: center;
 }
+.income #amount-income {
+  color: var(--success);
+  font-size: 1rem;
+  word-break: break-all;
+}
+
 .divider {
-  height: 50px;
+  height: 80%;
   width: 0px;
-  border: 1px solid var(--dark);
-  background: var(--dark);
+  border: 1.5px solid #5f5484;
+  background: #5f5484;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 .outcome {
   width: 45%;
+  text-align: center;
+}
+
+.outcome #amount-outcome {
+  color: var(--danger);
+  font-size: 1rem;
+  word-break: break-all;
+}
+
+.history {
+  margin: 20px 0px;
+  color: var(--dark);
+}
+.line-hr {
+  border: 1.5px solid var(--dark);
+  background-color: var(--dark);
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+/* Scrollbar Design */
+
+.history-list {
+  height: 100px;
+  overflow: hidden;
+}
+.history-list:hover {
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.history-list::-webkit-scrollbar {
+  width: 7px;
+}
+.history-list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 100px var(--primary);
+}
+.history-list::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+
+.history-list .history-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background: var(--primary);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  width: 95%;
+  display: relative;
+  transition: 0.3s;
+}
+
+.history-list i {
+  display: none;
+  display: absolute;
+  width: 100%;
+  text-align: center;
+  color: var(--light);
+  background: var(--danger);
+  border-radius: 10px;
+  top: 0;
+}
+
+.history-list .history-row:active {
+  padding: 0px;
+}
+
+.history-list .history-row:active span {
+  display: none;
+}
+
+.history-list .history-row:active i {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.earn span:last-child {
+  color: var(--success);
+  word-break: break-all;
+}
+
+.expense span:last-child {
+  color: var(--danger);
+  word-break: break-all;
+}
+
+.add-transition {
+  margin: 10px 0px;
+}
+
+.add-transition .form-group label {
+  display: block;
+  color: var(--dark);
+  margin-bottom: 3px;
+}
+
+.add-transition .form-group input {
+  width: 100%;
+  height: 32px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 10px;
+  background: var(--primary);
+  color: var(--dark);
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+  margin: 15px 0px 0px 0px;
+  background: var(--btn) !important;
+  border: none;
+  border-radius: 15px;
+  color: var(--light) !important;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(1.2);
+}
+
+.info {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0px 5px;
+}
+
+.info:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Message-Box for info */
+
+.message-box {
+  background: var(--message);
+  font-size: 14px;
+
+  padding: 5px 8px;
+  word-wrap: break-word;
+  color: var(--light);
+  border-radius: 5px;
+  display: none;
+}
+
+@media screen and (max-height: 1024px) and (max-width: 1366px) {
+  .container {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 50%;
+  }
+  .history-row {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .neumorphic-card {
+    height: 115vh;
+  }
+  .container {
+    width: 93%;
+  }
 }
