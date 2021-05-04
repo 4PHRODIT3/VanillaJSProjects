@@ -106,7 +106,7 @@ body {
   text-align: center;
 }
 
-.outcome #amount-outcome {
+.outcome #amount-expense {
   color: var(--danger);
   font-size: 1rem;
   word-break: break-all;
@@ -182,14 +182,16 @@ body {
   padding: 5px 10px;
 }
 
-.earn span:last-child {
+.earn span:nth-child(even) {
   color: var(--success);
   word-break: break-all;
+  font-weight: bold;
 }
 
-.expense span:last-child {
+.expense span:nth-child(even) {
   color: var(--danger);
   word-break: break-all;
+  font-weight: bold;
 }
 
 .add-transition {
@@ -226,7 +228,7 @@ body {
   cursor: pointer;
 }
 .btn:active {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .info {
@@ -286,6 +288,10 @@ body {
   }
   .container {
     width: 93%;
+  }
+
+  .message-box {
+    font-size: 12px;
   }
 }
 
