@@ -131,6 +131,7 @@ body {
 }
 .history-list:hover {
   overflow-y: auto;
+  overflow-y: overlay;
   cursor: pointer;
 }
 

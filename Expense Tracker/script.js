@@ -77,7 +77,7 @@ history_list.addEventListener("click", event => {
 submit.addEventListener("click", event => {
 
     var title_value = title.value.trim();
-    var amount_value = amount.value.trim();
+    var amount_value = amount.value.trim(); 
     event.preventDefault();
 
     if(title_value && amount_value){
