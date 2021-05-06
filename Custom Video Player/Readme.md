@@ -16,4 +16,4 @@
 
 - Functions to set the current video time according to the change of range
 
-[Tips learn Video Web API] (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs)
+[Tips_learn_Video_Web_API](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs/)
