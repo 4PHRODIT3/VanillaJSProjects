@@ -1,11 +1,13 @@
-# Just make practise for DOM Array methods
+### DOM Array Methods
 
-# First create UI and Make Responsive
+- Just make practise for DOM Array methods
 
-# Fetch API with Asynchronous Programming
+- First create UI and Make Responsive
 
-# Add to array and Update UI (Update UI after almost button click events occur)
+- Fetch API with Asynchronous Programming
 
-# Make some functions for your Buttons Events
+- Add to array and Update UI (Update UI after almost button click events occur)
 
-# Finished
+- Make some functions for your Buttons Events
+
+- Finished

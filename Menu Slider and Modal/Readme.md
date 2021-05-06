@@ -1,15 +1,17 @@
-# This project contains mostly css.
+### Modal and Responsive Menu Slider
 
-# First create postition relative header and fill some contents
+- This project contains mostly css.
 
-# Then create body for some paragraphs
+- First create postition relative header and fill some contents
 
-# Nav-slide is created outside the body tag by using flex position and translateX(-100%)
+- Then create body for some paragraphs
 
-# Add some JavaScript to make simple show navigation button by making toggle to translateX(your nav-slide width)
+- Nav-slide is created outside the body tag by using flex position and translateX(-100%)
 
-# Sign Up modal can be done easily with position fixed, width 100% and height 100%
+- Add some JavaScript to make simple show navigation button by making toggle to translateX(your nav-slide width)
 
-# Then Use z-index for priority
+- Sign Up modal can be done easily with position fixed, width 100% and height 100%
 
-# Finally Make Responsive Boo yaaa!
+- Then Use z-index for priority
+
+- Finally Make Responsive Boo yaaa!

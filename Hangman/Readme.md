@@ -1,13 +1,15 @@
-# Just a Simple game to guess the meaning
+### Hangman
 
-# Firstly, create UI and make responsive (Actually I copied SVG from this project owner :3)
+- Just a Simple game to guess the meaning
 
-# We have an array to store the random meaning for the game
+- Firstly, create UI and make responsive (Actually I copied SVG from this project owner :3)
 
-# In the game, show the numbers of character that the random meaning has.
+- We have an array to store the random meaning for the game
 
-# Using keyboard event to determine the typed one included in the random word
+- In the game, show the numbers of character that the random meaning has.
 
-# Show the typed one when it is the same as before or it is wrong
+- Using keyboard event to determine the typed one included in the random word
 
-# If wrong words exceeds the number of character, terminated it.
+- Show the typed one when it is the same as before or it is wrong
+
+- If wrong words exceeds the number of character, terminated it.

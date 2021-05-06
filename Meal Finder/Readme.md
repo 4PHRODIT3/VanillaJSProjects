@@ -1,11 +1,13 @@
-# Simple Web-applicaiton to find your meal
+### Meal Finder
 
-# First Create UI and Make Responsive
+- Simple Web-applicaiton to find your meal
 
-# Project contains search by name, view details and random meal functions
+- First Create UI and Make Responsive
 
-# Use API from www.themealdb.com. They support API for above functions EzPz.
+- Project contains search by name, view details and random meal functions
 
-# Genereate UI for the API data you fetched.
+- Use API from www.themealdb.com. They support API for above functions EzPz.
 
-# Enjoy!
+- Genereate UI for the API data you fetched.
+
+- Enjoy!

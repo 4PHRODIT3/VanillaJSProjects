@@ -1,11 +1,13 @@
-# Simple Expense Tracker that can store your income and expense. Moreover It will calculate your remaining balance.
+### Expense Tracker
 
-# Firstly Create UI. I used neumorphic soft-design and make responsive for all media devices.
+- Simple Expense Tracker that can store your income and expense. Moreover It will calculate your remaining balance.
 
-# Then code with JS to store your transitions in localStorage.
+- Firstly Create UI. I used neumorphic soft-design and make responsive for all media devices.
 
-# Next, code for remove transition history features (If you want, you can add also edit history).
+- Then code with JS to store your transitions in localStorage.
 
-# Add more event handling animation for user-experience.
+- Next, code for remove transition history features (If you want, you can add also edit history).
 
-# Enjoy!
+- Add more event handling animation for user-experience.
+
+- Enjoy!

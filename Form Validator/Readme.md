@@ -1,17 +1,19 @@
-# This is just a client side form validation system
+### Form Validator
 
-# It's made with HTML, CSS and the most important Vanilla Javascript
+- This is just a client side form validation system
 
-# Step 1 Create UI
+- It's made with HTML, CSS and the most important Vanilla Javascript
 
-# Step 2 Get value and create array of id names of input elements
+- Step 1 Create UI
 
-# Step 3 Looping over id names and validate null or not
+- Step 2 Get value and create array of id names of input elements
 
-# Step 4 If not null, validate length for username and passwords
+- Step 3 Looping over id names and validate null or not
 
-# Step 5 Validate the password and the confirm password
+- Step 4 If not null, validate length for username and passwords
 
-# Step 6 Validate Email input
+- Step 5 Validate the password and the confirm password
 
-# Step 7 Show Error and Success
+- Step 6 Validate Email input
+
+- Step 7 Show Error and Success
