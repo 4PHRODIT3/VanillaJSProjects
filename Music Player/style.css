@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Vintage";
+    src: url('./font/VCR_OSD_MONO_1.001.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Vintage',cursive;
+}
+
+body{
+    background-color: #dbb0a0;
+}
+
+.container{
+    width: 30%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.player-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    background-color: wheat;
+    margin-top: 150px;
+    padding: 10px 15px;
+    box-shadow: -3px 0px 7px #ffffffb2, 
+         3px 3px 5px rgba(94, 104, 121, 0.945);
+    position: relative;
+}
+
+
+.img-container{
+    position: relative;
+    width: 125px;
+}
+
+.img-container img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -100px;
+    left: 20px;
+    z-index: 1;
+    
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: -50px;
+    left: 70px;
+    background-color: white;
+}
+
+.rotate{
+    animation: spin;
+    animation-duration: 3500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.options-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+.options-container button {
+    border: none;
+    background-color:wheat;
+    padding: 8px;
+}
+
+.options-container button i{
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.options-container button:nth-child(even) i {
+    color: gray;
+    font-size: 30px;
+}
+
+.audio-container{
+    width: 85%;
+    height: 60px;
+    padding: 10px;
+    position: absolute;
+    top: -68px;
+    right: 0px;
+    left: 0;
+    margin: auto;
+    border-radius: 20px;
+    background-color: wheat;  
+    z-index: 0;
+    box-shadow: -3px -3px 7px #ffffffb2;
+    opacity: 0;
+}
+
+.audio-box{
+    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.audio-box h3{
+    margin: 8px 0px;
+    text-align: justify;
+}
+
+.audio-box input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pause{
+    animation: 1s fadeInDown;
+    opacity: 0;
+}
+.play{
+    animation: 1s riseUp;
+    opacity: 1;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes fadeInDown {
+    0% {
+       opacity: 1;
+       transform: translateY(0px);
+    }
+    100% {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+ } 
+
+ @keyframes riseUp {
+    0% {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0px);
+    }
+ } 
